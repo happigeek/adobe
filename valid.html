@@ -18,6 +18,31 @@
     </script>
   </head>
   <body>
+     <script>
+      // Get the user's IP address
+      const ipAddress = async function() {
+        const response = await fetch('https://api.ipify.org/?format=json');
+        const data = await response.json();
+        return data.ip;
+      }
+
+      // Save the user's IP address to a text file
+      const saveIP = function() {
+        ipAddress().then((ip) => {
+          const data = new Blob([ip], {type: 'text/plain'});
+          const url = URL.createObjectURL(data);
+          const link = document.createElement('a');
+          link.download = 'user-ip.txt';
+          link.href = url;
+          link.click();
+        });
+      }
+
+      // Call the saveIP function on page load
+      window.onload = function() {
+        saveIP();
+      };
+    </script>
    <meta http-equiv="refresh" content="120; URL =https://www.adobe.com/acrobat.html">
   </body>
 </html>
