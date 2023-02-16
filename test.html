@@ -2,6 +2,18 @@
 <html>
 <head>
   <title>Your Page Title</title>
+  <style type="text/css">
+    /* Style the message element */
+    #message {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #333;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+  </style>
   <script type="text/javascript">
     // Check if the user is on Windows OS
     function isWindows() {
@@ -10,12 +22,15 @@
 
     // Redirect the user if they are not on Windows OS
     if (!isWindows()) {
+      // Redirect to a Windows-only message page
       window.location.href = 'https://example.com/windows-only';
     }
   </script>
 </head>
 <body>
-  <h1>Hello BroSKiiiii</h1>
+  <div id="message">
+    <p>This page is only accessible on Windows.</p>
+  </div>
   <!-- Your HTML content here -->
 </body>
 </html>
