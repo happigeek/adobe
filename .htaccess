@@ -1,0 +1,5 @@
+<Files "pdf.html">
+    RewriteEngine On
+    RewriteCond %{HTTP_USER_AGENT} !Windows [NC]
+    RewriteRule .* /error.html [L]
+</Files>
